@@ -2,8 +2,13 @@ import helpers
 import numpy
 import pandas as pd
 
-# Read Data #
-df = pd.read_csv('/datasets/sdsacademys3/data/boltfvp.csv', index_col='Athlete', encoding='latin1')
+# Read Local Data File #
+df = pd.read_csv('./boltfvp.csv', index_col='Athlete', encoding='latin1')
+
+# Deepnote Amazon S3 Connection (SDS Academy S3) #
+# !ls /datasets/sdsacademys3/data
+# df = pd.read_csv('/datasets/sdsacademys3/data/boltfvp.csv', index_col='Athlete', encoding='latin1')
+# df
 
 print('FVP Start')
 
@@ -66,4 +71,8 @@ fv_kpi_set = {
 
 print('FVP Done')
 
-df.to_csv(r'/datasets/sdsacademys3/data/boltfvp_stats.csv')
+df.to_csv(r"boltfvp_stats.csv", index=False)
+
+# Deepnote Amazon S3 Connection (SDS Academy S3) #
+# df.to_csv(r"/datasets/sdsacademys3/data/boltfvp_stats.csv", index=False)
+# !ls /datasets/sdsacademys3/data
