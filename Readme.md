@@ -12,21 +12,17 @@
 
 > The methods used in this notebook for calculating Force Velocity Profile data and KPIs were inspired by this [post and excel template by JB Morin](https://jbmorin.net/2017/12/13/a-spreadsheet-for-sprint-acceleration-force-velocity-power-profiling/).
 
-##### ```[Speed Export Usain Bolt 120805.csv](./data/Speed Export Usain Bolt 120805.csv)```
+#### [```Speed Export Usain Bolt 120805.csv```](./data/Speed%20Export%20for%20Usain%20Bolt%20120805.csv)
+  This csv file contains Usain Bolt's ***velocity*** over the period of his 100m Final Race in London, 2012. You'll find it in the ```data``` folder. The data has recorded velocity at every 10th of a second (this would be similar to having a GPS device sampling at 10hz).
 
-This csv file contains Usain Bolt's ***velocity*** over the period of his 100m Final Race in London, 2012. You'll find it in the ```data``` folder. The data has recorded velocity at every 10th of a second (this would be similar to having a GPS device sampling at 10hz).
+#### [```fvp.ipynb```](./fvp.ipynb)  
+  This is the notebook used for ***calculating*** and ***plotting*** Usaing Bolt's Force Velocity Profile. The notebook will still run without the plots (if you'd just like to format the data to visualise else where), but, even better, you may even want to create a ***script version*** (```.py```) of the notebook to run ***without*** Jupyter or Deepnote (Github Actions > Cloud Storage > BI/WebApp?).
 
-##### ```[fvp.ipynb](./fvp.ipynb)```
+#### [```helpers.py```](helpers.py)
+  This is a ***Python Module*** containing some methods imported for use in the notebook.
 
-This is the notebook used for ***calculating*** and ***plotting*** Usaing Bolt's Force Velocity Profile. The notebook will still run without the plots (if you'd just like to format the data to visualise else where), but, even better, you may even want to create a ***script version*** (```.py```) of the notebook to run ***without*** Jupyter or Deepnote (Github Actions > Cloud Storage > BI/WebApp?).
-
-##### ```[helpers.py](helpers.py)```
-
-This is a ***Python Module*** containing some methods imported for use in the notebook.
-
-##### ```[Usain Bolt FVP Stats 120805.csv](Usain Bolt FVP Stats 120805.csv)```
-
-This is the result of a smooth run of the ```[fvp.ipynb](./fvp.ipynb)``` notebook. The FVP KPIS will be simply be appened onto the end of the modeled FVP data (to avoid having that data separate, could alternatively store as JSON).
+#### [```Usain Bolt FVP Stats 120805.csv```](./fvp/Usain%Bolt%FVP%Stats%120805.csv)
+  This is the result of a smooth run of the [```fvp.ipynb```](./fvp.ipynb) notebook. The FVP KPIS will be simply be appened onto the end of the modeled FVP data (to avoid having that data separate, could alternatively store as JSON).
 
 #### ```Dependencies```
 
