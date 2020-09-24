@@ -6,6 +6,33 @@ import math
 def hello():
     print('Hey')
 
+# Clean GPS Files #
+
+def clean_gps_data(df):
+    df.columns = df.iloc[7]
+    df = df.iloc[8:]
+    df = df[['Velocity', 'Seconds']].reset_index(drop=True)
+    df['Seconds'] = df['Seconds'].astype(float).apply('{:.1f}'.format).astype(float)
+    df['Velocity'] = df['Velocity'].astype(float)
+    df.columns = ['Velocity (m/s)', 'Time (s)']
+    return df
+
+# Identify FVP Scope (based on 1 max run) #
+
+def indentify_fvp_scope(df):
+    ## Peak (Max)
+    v_max = df['Velocity (m/s)'].max()
+    v_max_index = df.index[df['Velocity (m/s)'] == df['Velocity (m/s)'].max()].tolist()[-1]
+    ## Start
+    v_max_start_index = df.index[df['Time (s)'] == (df['Time (s)'][v_max_index] - 7.0)].tolist()[-1]
+    ## Plateau
+    v_plateau_index = df.index[df['Time (s)'] == (df['Time (s)'][v_max_index] + 0.2)].tolist()[-1]
+    ## Filter to FVP Range
+    df = df.iloc[v_max_start_index:v_plateau_index]
+    df = df[df['Velocity (m/s)'] > 0.4]
+    df["Time (s)"] = ((numpy.arange(df.shape[0]) + 1) / 10.0).astype(float)
+    return df
+
 # Data Helpers #
 
 def model_speed(time, velocity, max_velocity, tau):
