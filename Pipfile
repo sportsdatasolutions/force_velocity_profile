@@ -10,5 +10,3 @@ jupyter = "*"
 numpy = "*"
 pandas = "*"
 matplotlib = "*"
-
-[requires]
