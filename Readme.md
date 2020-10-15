@@ -6,7 +6,11 @@
 
 ## Getting Started
 
-> ***Fork*** this repo and clone your own fork locally or on Deepnote. See instruction below to install dependencies and run the program.
+> Duplicate the project on **Deepnote** (See launch in Deepnote button at **top** of Readme), **or**, fork this repo to clone in a **local** Python environment e.g.
+
+```bash
+$ git clone git@github.com:githubusername/force_velocity_profile.git && cd force_velocity_profile
+```
 
 **Note:** For learning purposes, ***recreate*** this repository yourself as apposed to cloning or forking.
 
@@ -20,25 +24,31 @@ This csv file contains Usain Bolt's ***velocity*** over the period of his 100m F
 
 #### [```fvp.ipynb```](./fvp.ipynb)  
 
-This is the notebook used for ***calculating*** and ***plotting*** Usaing Bolt's Force Velocity Profile. The notebook will still run without the plots (if you'd just like to format the data to visualise else where), but, even better, you may even want to create a ***script version*** (```.py```) of the notebook to run ***without*** Jupyter or Deepnote (Github Actions > Cloud Storage > BI/WebApp?).
+This is the notebook used for ***calculating*** and ***plotting*** Usain Bolt's Force Velocity Profile. The notebook can still run without the plots and output the FVP data with KPIs to a csv file within the ```fvp``` folder.
 
 #### [```helpers.py```](helpers.py)
 
-This is a ***Python Module*** containing some methods imported for use in the notebook.
+This is a ***Python Module*** containing some methods imported for use in the notebook. This was mainly done to keep the notebook clean, however, if in Deepnote, you can now hide code from a code cell and still display it's output (open command pallet on a notebook and search: hide), if you prefer that.
 
 #### [```Usain Bolt FVP Stats 120805.csv```](./fvp/Usain%Bolt%FVP%Stats%120805.csv)
 
-This is the result of a smooth run of the [```fvp.ipynb```](./fvp.ipynb) notebook. The FVP KPIS will be simply be appened onto the end of the modeled FVP data (to avoid having that data separate, could alternatively store as JSON).
+This is the result of a smooth run of the [```fvp.ipynb```](./fvp.ipynb) notebook. The KPIS will be simply be appened onto the end of the modeled FVP data (to avoid having that data separate, could alternatively store as JSON).
 
 ### ```Dependencies```
 
-> **If cloned locally**, install dependencies in ```Pipfile```. See [this guide](https://realpython.com/pipenv-guide/) for help on ```pipenv``` (if not familiar) e.g.
+> If on **Deepnote**, please see the **```init.ipynb``` (environment tab)** to see how the project is setup. **If cloned locally**, install dependencies in ```Pipfile```. See [the docs](https://docs.pipenv.org/) for help on ```pipenv``` (if not familiar) e.g.
 
 ```bash
 # Install pipenv (if not already)
-$ pip install pipenv
+$ pip install --user pipenv
 # Run pipenv install (within cloned project directory)
 $ pipenv install
+```
+
+> And **install** ```jupyter``` if you'd like to run the **notebook** version e.g.
+
+```bash
+$ pipenv install jupyter
 ```
 
 ### ```Running```
