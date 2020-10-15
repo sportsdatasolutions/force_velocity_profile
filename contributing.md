@@ -2,19 +2,16 @@
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
-- Reporting a bug
-- Discussing the current state of the code
-- Submitting a fix
-- Proposing new features
-- Becoming a maintainer
+- Reporting a bug 🐛 
+- Discussing the current state of the code 🗣 
+- Submitting a fix 🔨 
+- Proposing new features 🌟 
+- Becoming a maintainer 👷
 
-## Develop with Github
+## Contribute using [Github Pull Request Workflow](https://guides.github.com/introduction/flow/index.html)
 
-We use Github to host code, to track issues and feature requests, as well as accept pull requests.
-
-## Use [Github Flow](https://guides.github.com/introduction/flow/index.html)
-
-***Pull Requests*** are the ***best*** way to ***propose changes*** to the codebase. We actively **welcome** your **pull requests.**
+We use **Github** to host code, to track **Issues** and **Feature Requests**, as well as accept **Pull Requests**.
+***PRs*** are the ***best*** way to ***propose changes*** to the codebase. We actively **welcome** your ***PRs***!
 
 #### 1. Fork the repo, clone your fork, and create your branch from `master` with your initials in the branch name e.g.
 
@@ -22,17 +19,17 @@ We use Github to host code, to track issues and feature requests, as well as acc
 $ git checkout -b sds/bug_fix
 ```
 
-#### 2. Push your branch and submit a pull request to us as soon as possible, even if it's still work in progress.
+#### 2. Push your branch and submit a PR to us as soon as possible, even if it's still work in progress.
 
 #### 3. If you've added a new feature or dependency, make sure you update the documentation.
 
-#### 4. Make sure you use a linter for your code, we recommend pylint.
+#### 4. Make sure you use a ***linter*** in your development environment, e.g. ```pylint```.
 
 #### 5. Finaly co-operate with maintainers to get your contribution merged!
 
-## Report Bugs using Github [Issues](https://github.com/briandk/transcriptase-atom/issues)
+## Report Bugs using [Github Issues](../../issues)
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/sportsdatasolutions/python_json_csv/issues/new); it's that easy! 
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](../../issues/new); it's that easy! 
 
 **Write Bug Reports** with ***detail, background, and sample code.***
 
