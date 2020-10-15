@@ -1,11 +1,6 @@
 import numpy
 import math
 
-# Init #
-
-def hello():
-    print('Hey')
-
 # Clean GPS Files #
 
 def clean_gps_data(df):
