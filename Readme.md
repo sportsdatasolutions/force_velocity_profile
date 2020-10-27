@@ -3,6 +3,7 @@
 > Notebook for obtaining data and KPIs needed in Force Velocity Profiles (from instant velocity over time e.g. GPS, Radar) w/ Usain Bolt Example Data
 
 ![Bolt](https://sportsdatasolutionsacademy.s3.eu-west-2.amazonaws.com/public/Links/UsainBolt.jpeg)
+> Picture from Film by Gatorade: [The Boy Who Learnt To Fly](https://www.youtube.com/watch?v=kIDUfSQ32jU&t=3s&ab_channel=Gatorade)
 
 ## Getting Started
 
