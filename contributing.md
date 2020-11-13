@@ -13,19 +13,17 @@ We love your input! We want to make contributing to this project as easy and tra
 We use **Github** to host code, to track **Issues** and **Feature Requests**, as well as accept **Pull Requests**.
 ***PRs*** are the ***best*** way to ***propose changes*** to the codebase. We actively **welcome** your ***PRs***!
 
-#### 1. Fork the repo, clone your fork, and create your branch from `master` with your initials in the branch name e.g.
+**If you want to contribute, just [Fork](https://guides.github.com/activities/forking/) this repo then use the [Pull Request](https://guides.github.com/activities/hello-world/#branch) workflow to suggest changes** e.g.
 
-```bash
-$ git checkout -b sds/bug_fix
-```
+1. **Fork** this repository. As in click the fork button on the top-right hand side of this web page. You will now have a fork of this repo on your **own Github account**.
 
-#### 2. Push your branch and submit a PR to us as soon as possible, even if it's still work in progress.
+2. Proceed to creating your **new branch** (not ```main``` or ```master```). Place an **indication** of ***what*** your **suggested change** is about e.g. ```hotfix``` (spelling mistakes etc) or ```feature``` (new suggestion/content/resources etc), and your ***initials** in the **branch name** e.g. ```hotfix/dsp```.
 
-#### 3. If you've added a new feature or dependency, make sure you update the documentation.
+3. Create the **changes** (you can simply edit files on Github) and **commit** to your **new branch**.
 
-#### 4. Make sure you use a ***linter*** in your development environment, e.g. ```pylint```.
+4. Open a [Pull Request](https://guides.github.com/activities/hello-world/#pr) pointing to the **original** (upstream) course repository (our maintainers will review your PR and merge should there not be any further work to do on your side).
 
-#### 5. Finaly co-operate with maintainers to get your contribution merged!
+5. If you plan on making more contributions, make sure you [sync your fork](https://adrientorris.github.io/github/how-to-update-a-forked-repository-from-the-ui-on-github) with the original repo before starting a new branch.
 
 ## Report Bugs using [Github Issues](../../issues)
 
